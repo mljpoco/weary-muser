@@ -14,11 +14,60 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h4 class="topnav">Subscribe!</h4>
+                    <h4 class="topnav"><a role="button" data-toggle="modal" data-target="#subscribeModal">Subscribe!</a></h4>
                 </div>
-                <div class="col text-right text-nowrap">
-                    <h4 class="topnav">Try searching x... y... z...</h4>
+                <div id="subscribeModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                <h3 class="modal-title text-center">Subscribe</h3>
+                                <button type="button" class="close bg-light" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-12">
+                                                <h5 class="form-text text-center"><em>Enter your Email to receive updates whenever the Muser posts!</em></h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-12">
+                                                <label class="sr-only" for="subscribeEmail">Email address</label>
+                                                <input type="email" class="form-control bg-dark text-white form-control-sm" id="subscribeEmail" placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group col">
+                                                <label class="sr-only" for="loginPassword">Password</label>
+                                                <input type="password" class="form-control bg-dark text-white form-control-sm" id="loginPassword" placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col text-right">
+                                                <button type="submit" class="btn btn-secondary">Confirm</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <h4 class="topnav">
+                    <div class="col order-last text-right">
+                        <form>
+                            <div class="input-group">
+                                <label class="form-label" for="search"></label>
+                                <input type="search" id="search" class="form-control bg-dark text-white search" placeholder="Search...">
+                                <button type="button" class="btn">
+                                 <i class="fa fa-search fa-lg"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </h4>
             </div>
             <div class="row">
                 <div class="col">
@@ -38,7 +87,7 @@
                         <li><h5 class="botnav nav-item col"><a href="#">Latest</a></h5></li>
                         <li><h5 class="botnav nav-item col"><a href="about.html">About</a></h5></li>
                         <li><h5 class="botnav nav-item col">Contact</h5></li>
-                        <li><h5 class="botnav nav-item col text-nowrap">Support the Muser!</h5></li>
+                        <li><h5 class="botnav nav-item col text-nowrap"><a href="support.html">Support the Muser!</a></h5></li>
                     </ul>
                 </div>
             </nav>
@@ -60,14 +109,7 @@
     </div>
     <div class="article">
         <article><span class="firstLetta">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col comments">
-
-            </div>
         </div>
-    </div>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
