@@ -9,60 +9,121 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Weary Muser</title>
 </head>
-<body>
+<body>  
     <header class="jumbotron jumbotron-fluid">
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
-                    <h4 class="topnav">Subscribe!</h4>
+                <div class="col sub">
+                    <h4 id="topnav" class="topnav"><a role="button" data-toggle="modal" data-target="#subscribeModal">Subscribe!</a></h4>
                 </div>
-                <div class="col text-right text-nowrap">
-                    <h4 class="topnav">Try searching x... y... z...</h4>
+                <div id="subscribeModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                <h3 class="modal-title text-center">Subscribe</h3>
+                                <button type="button" class="close bg-light" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-12">
+                                                <h5 class="form-text text-center"><em>Enter your Email to receive updates whenever the Muser posts!</em></h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-12">
+                                                <label class="sr-only" for="subscribeEmail">Email address</label>
+                                                <input type="email" class="form-control bg-dark text-white form-control-sm" id="subscribeEmail" placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group col">
+                                                <label class="sr-only" for="loginPassword">Password</label>
+                                                <input type="password" class="form-control bg-dark text-white form-control-sm" id="loginPassword" placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col text-right">
+                                                <button type="submit" class="btn btn-dark">Confirm</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <h4 class="topnav">
+                    <div class="col">
+                        <form>
+                            <div class="input-group">
+                                <label class="form-label" for="search"></label>
+                                <input type="search" id="search" class="form-control bg-dark text-white search" placeholder="Search...">
+                                <button type="submit" class="btn">
+                                 <i class="fa fa-search fa-lg"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </h4>
             </div>
-            <div class="row">
-                <div class="col">
-                    <h1 class="wearymuser">Weary Muser</h1>
-                </div>
+            <div class="col">
+                <h1 class="wearymuser"><strong>Weary Muser</strong></h1>
             </div>
         </div>
     </header>
     <div class="container-fluid">
-        <div class="row">
-            <nav class="navbar navbar-expand-sm navbar-light">
-                <button type="button" role="button" class="navbar-toggler" data-toggle="collapse" data-target="#wearyNavbar" aria-controls="#wearyNavbar" aria-expanded="false">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="wearyNavbar">
-                    <ul class="navbar-nav navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <button type="button" role="button" class="navbar-toggler" data-toggle="collapse" data-target="#wearyNavbar" aria-controls="#wearyNavbar" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="wearyNavbar">
+                <ul class="navbar-nav navbar-expand-sm">
                         <li><h5 class="botnav nav-item col"><a href="index.html">Latest</a></h5></li>
                         <li><h5 class="botnav nav-item col"><a href="#">About</a></h5></li>
                         <li><h5 class="botnav nav-item col">Contact</h5></li>
                         <li><h5 class="botnav nav-item col text-nowrap"><a href="support.html">Support the Muser!</a></h5></li>
                     </ul>
-                 </div>
+                    <div class="col">
+                        <h5 class="botnav text-sm-right"><a href="a">Archive</a></h5>
+                    </div>
+                </div>
             </nav>
-            <div class="col order-last text-right archive">
-                <h5 class="botnav">Archive</h5>
+        </div>
+        <div class="container-fluid">
+            <div class="row">           
+                <div class="col thedivider">
+                    <h2 class="article-title">Article Title</h2>
+                </div>
+                <div class="col-1"></div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col thedivider">
-                <h2 class="article-title">Article Title</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-1 share">
+                    <a href="#"><i class="fa fa-share-square-o fa-2x"></i></a>
+                </div>
+                <div class="col-1 btt">
+                    <a href="#topnav"><i class="fa fa-arrow-up fa-2x"></i></a>
+                </div>
+                <div class="col">
+                    <div class="article">
+                        <article><span class="firstLetta">T</span>his blog exists. For sure... no doubt about it.</article>
+                    </div>
+                </div>
             </div>
-            <div class="col-1"></div>
         </div>
-    </div>
-    <div class="share">
-        <i class="fa fa-share-square-o fa-2x"></i>
-    </div>
-    <div class="article">
-        <article><span class="firstLetta">T</span>his blog exists... for sure. No doubt about it.</article>
-    </div>
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
-</html>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    That which lay below the article.
+                </div>
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>

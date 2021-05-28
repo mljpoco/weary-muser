@@ -5,6 +5,14 @@ a {
     text-decoration: none;
 }
 
+.btt {
+    position: fixed;
+    margin-top: 30vh;
+    margin-left: 3vw;
+    padding-right: 0;
+    z-index: 1;
+}
+
 h1 {
     text-align: center;
     padding-bottom: 1px;
@@ -25,25 +33,21 @@ h5 {
 }
 
 .article {
-    position: absolute;
-    margin-right: 7vw;
+    position: relative;
+    margin-right: 1vw;
+    margin-left: 7vw;
     display: inline-block;
     text-align: left;
     word-break: break-word;
-    padding-top: 3vh;
-    padding-left: 5vw;
+    padding-left: 3vw;
     border-left: 2px solid black;
     font-family: 'Crimson Text', serif;
-}
-
-.archive {
-    position: absolute;
-    z-index: -1;
 }
 
 @media screen and (min-width: 320px) {
     .article {
         font-size: 5vw;
+        margin-left: 11vw;
     }
     .wearymuser {
         font-size: 10vw;
@@ -53,16 +57,26 @@ h5 {
     }
     .search {
         font-size: 5vw;
+        margin-left: 30vw;
     }
-
+    .sub {
+        margin-left: 60vw;
+    }
     .search::placeholder {
         font-size: 5vw;
+    }
+    .share {
+        font-size: 4vw;
+    }
+    .btt {
+        font-size: 4vw;
     }
 }
 
 @media screen and (min-width: 455px) {
     .article {
         font-size: 4vw;
+        margin-left: 10vw;
     }
     .wearymuser {
         font-size: 8vw;
@@ -71,13 +85,23 @@ h5 {
         font-size: 6vw
     }
     .topnav {
-        font-size: 4vw;
+        font-size: 5vw;
     }
     .search {
-        font-size: 4vw;
+        font-size: 3vw;
+        margin-left: 0;
+    }
+    .sub {
+        margin-left: 0;
     }
     .search::placeholder {
         font-size: 4vw;
+    }
+    .share {
+        font-size: 3vw;
+    }
+    .btt {
+        font-size: 3vw;
     }
 }
 
@@ -85,36 +109,35 @@ h5 {
 @media screen and (min-width: 590px) {
     .article {
         font-size: 3vw;
+        margin-left: 8vw;
     }
     .wearymuser {
-        font-size: 6vw;
+        font-size: 7vw;
     }
     .article-title {
-        font-size: 4vw
+        font-size: 5vw
     }
     .botnav {
         font-size: 3vw;
     }
-    .topnav {
-        font-size: 3vw;
+    .share {
+        font-size: 2vw;
     }
-    .search {
-        font-size: 3vw;
-    }
-    .search::placeholder {
-        font-size: 3vw;
+    .btt {
+        font-size: 2vw;
     }
 }
 
 @media screen and (min-width: 992px) {
     .article {
         font-size: 2vw;
+        margin-left: 7vw;
     }
     .botnav {
         font-size: 2vw;
     }
     .topnav {
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .search {
         font-size: 2vw;
@@ -194,11 +217,20 @@ h5 {
   }
 
 .share {
-    display: inline-block;
-    padding-top: 2vw;
-    padding-right: 2vw;
-    padding-left: 4vw;
-    padding-bottom: 0;
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    padding-right: 0;
+}
+
+.fa-arrow-up {
+    position: relative;
+    z-index: 99;
+}
+
+.fa-share-square-o {
+    position: relative;
+    z-index: 99;
 }
 
 a:hover {
@@ -220,8 +252,8 @@ a:hover {
 }
 
 .thedivider {
+    margin-left: 2vw;
     border-bottom: 2px solid black;
-    margin-left: 3vw;
     animation: slideMeRight .75s ease-in;
 }
 
@@ -239,4 +271,8 @@ a:hover {
 .topnav {
     padding-top: 1vh;
     z-index: 10;
+}
+
+.wearymuser {
+    padding-bottom: 1vmax;
 }
