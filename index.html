@@ -13,8 +13,10 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container-fluid">
             <div class="row">
-                <div class="col sub">
-                    <h4 id="topnav" class="topnav"><a role="button" data-toggle="modal" data-target="#subscribeModal">Subscribe!</a></h4>
+                <div class="col">
+                    <h4 id="topnav" class="topnav"><a role="button" data-toggle="modal" data-target="#subscribeModal">
+                        <span class="sub">Subscribe!</span>
+                    </a></h4>
                 </div>
                 <div id="subscribeModal" class="modal fade" role="dialog">
                     <div class="modal-dialog" role="document">
@@ -35,10 +37,6 @@
                                             <div class="form-group col-12">
                                                 <label class="sr-only" for="subscribeEmail">Email address</label>
                                                 <input type="email" class="form-control bg-dark text-white form-control-sm" id="subscribeEmail" placeholder="Enter email">
-                                            </div>
-                                            <div class="form-group col">
-                                                <label class="sr-only" for="loginPassword">Password</label>
-                                                <input type="password" class="form-control bg-dark text-white form-control-sm" id="loginPassword" placeholder="Password">
                                             </div>
                                         </div>
                                         <div class="form-row">
@@ -140,32 +138,25 @@
                 </div> 
             </div>
             <div class="col-12 text-center article-title">
-                Article Title
+                <span id="titleWrapper"></span>
             </div>
         </div>
     </div>
-            <div class="share">
-                <a href="#"><i class="fa fa-share-square-o fa-2x"></i></a>
-            </div>
-                <div class="article">
-                    <article><span class="firstletta">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    <br><br>
-                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                     <br><br>
-                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
-                </div>
+    <div class="share">
+        <a href="#"><i class="fa fa-share-square-o fa-2x"></i></a>
+    </div>
+        <div class="article" id="bodyWrapper">
+        </div>
     <div class="container-fluid">
         <div class="text-center">
             <a href="#topnav"><i class="btn btn-light fa fa-angle-up"></i></a>
         </div>
         <div class="row">
-            <div class="col">
-                <button class="btn text-left sift">Newer</button>
+            <div class="col text-left">
+                <button class="btn" id="siftNewer">Newer</button>
             </div>
             <div class="col text-right">
-                <button class="btn text-right sift">Older</button>
+                <button class="btn" id="siftOlder">Older</button>
             </div>
         </div>
         
@@ -173,5 +164,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>
