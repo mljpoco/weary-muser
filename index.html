@@ -55,15 +55,13 @@
                 </div>
                 <h4 class="topnav">
                     <div class="col">
-                        <form>
-                            <div class="input-group">
-                                <label class="form-label" for="search"></label>
-                                <input type="search" id="search" class="form-control bg-dark text-white search" placeholder="Search...">
-                                <button type="submit" class="btn">
-                                 <i class="fa fa-search fa-lg"></i>
-                                </button>
-                            </div>
-                        </form>
+                        <div class="input-group">
+                            <label class="form-label" for="search"></label>
+                            <input type="search" id="search" class="form-control bg-dark text-white search" placeholder="Search...">
+                            <button type="submit" class="btn">
+                                <i class="fa fa-search fa-lg"></i>
+                            </button>
+                        </div>
                     </div>
                 </h4>
             </div>
@@ -138,28 +136,36 @@
                 </div> 
             </div>
             <div class="col-12 text-center article-title">
-                <span id="titleWrapper"></span>
+                <span id="titleWrapper">
+                    <!-- title below -->
+                    
+                    <!-- title above -->
+                </span>
             </div>
         </div>
     </div>
     <div class="share">
         <a href="#"><i class="fa fa-share-square-o fa-2x"></i></a>
     </div>
-        <div class="article" id="bodyWrapper">
+        <div class="article">
+            <span id="bodyWrapper">
+            <!-- body below -->
+            
+            <!-- body above -->
+            </span>
         </div>
     <div class="container-fluid">
         <div class="text-center">
-            <a href="#topnav"><i class="btn btn-light fa fa-angle-up"></i></a>
+            <a href="#topnav"><i class="btn fa fa-angle-up"></i></a>
         </div>
         <div class="row">
             <div class="col text-left">
-                <button class="btn" id="siftNewer">Newer</button>
+                <a href="#topnav" id="siftNewer">Newer</a>
             </div>
             <div class="col text-right">
-                <button class="btn" id="siftOlder">Older</button>
+                <a href="#topnav" id="siftOlder">Older</a>
             </div>
         </div>
-        
     </div>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

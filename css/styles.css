@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
 
 a {
     color: #50525f;
@@ -46,6 +47,11 @@ body {
     overflow-x: hidden;
     background-color: #d2d0c8;
     color: #50525f;
+}
+
+::selection {
+    background: #c38fa5;
+    color: black;
 }
 
 h1 {
@@ -236,7 +242,8 @@ h4, h5 {
 .dropcap {
     float: left;
     font-weight: bold;
-    font-family: 'Cinzel Decorative', cursive;
+    padding-right: 0.3em;
+    font-family: 'WindSong', cursive;
 }
 
 .form-control {
@@ -303,7 +310,8 @@ ul {
     z-index: 1;
     margin: 1vh 3vw;
     font-family: 'Cinzel Decorative', cursive;
-    color: #50525f; 
+    color: #50525f;
+    user-select: none;
 }
 
 #siftNewer:hover, #siftOlder:hover {
@@ -378,4 +386,5 @@ nav {
 
 .wearymuser {
     cursor: default;
+    user-select: none;
 }

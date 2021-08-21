@@ -1,32 +1,28 @@
-import {first} from './articles/first.js';
-import {second} from './articles/second.js';
+'use strict';
+import {articles} from './articles.js';
 
-const archivedArticles = {
-  articles: [
-    second,
-    first
-  ],
+const newer = document.getElementById('siftNewer');
+const older = document.getElementById('siftOlder');
+
+let articleViewer = {
   aIndex: 0,
   siftNewer() {
-    console.log('siftnewer fires');
-    let newIndex = (this.aIndex > 0) ? --this.aIndex : 0;
-    this.aIndex = newIndex;
-    console.log(this.aIndex);
+    articleViewer.aIndex = (articleViewer.aIndex > 0) ? --articleViewer.aIndex : articleViewer.aIndex;
+    console.log('siftNewer fires', 'aIndex: ' + articleViewer.aIndex);
+    renderArticle();
   },
   siftOlder() {
-    console.log('siftolder fires', this.articles);
-    let newIndex = (this.aIndex < this.articles.length) ? ++this.aIndex : this.articles.length;
-    this.aIndex = newIndex;
-    console.log(this.aIndex);
-  }
+    articleViewer.aIndex = (articleViewer.aIndex < articles.length - 1) ? ++articleViewer.aIndex : articleViewer.aIndex;
+    console.log('siftOlder fires', 'aIndex: ' + articleViewer.aIndex);
+    renderArticle();
+  },
 };
-console.log(archivedArticles.articles)
-document.getElementById('siftNewer').addEventListener('click', archivedArticles.siftNewer);
-document.getElementById('siftOlder').addEventListener('click', archivedArticles.siftOlder);
 
-window.onload = function renderArticle() {
-  document.getElementById('titleWrapper').innerHTML = archivedArticles.articles[archivedArticles.aIndex].title;
-  document.getElementById('bodyWrapper').innerHTML = archivedArticles.articles[archivedArticles.aIndex].body;
+function renderArticle() {
+  newer.addEventListener('click', articleViewer.siftNewer);
+  older.addEventListener('click', articleViewer.siftOlder);
+  document.getElementById('titleWrapper').innerHTML = articles[articleViewer.aIndex].title;
+  document.getElementById('bodyWrapper').innerHTML = articles[articleViewer.aIndex].body;
 }
 
-
+renderArticle();
