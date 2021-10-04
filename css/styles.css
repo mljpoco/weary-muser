@@ -13,7 +13,6 @@ a {
     position: relative;
     z-index: 3000;
     opacity: .7;
-    background-color: #343a40;
     opacity: 1;
 }
 
@@ -50,8 +49,8 @@ body {
 }
 
 ::selection {
-    background: #c38fa5;
-    color: black;
+    background: #b90925;
+    color: #d2d0c8;
 }
 
 h1 {
