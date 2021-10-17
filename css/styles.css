@@ -30,7 +30,7 @@ a {
 .article-title {
 	font-family: 'Cinzel Decorative', cursive;
 	
-	animation: fadeMeDown 1.5s ease-out;
+	animation: fadeMeDown 2s ease-out;
 }
 
 body {
@@ -40,8 +40,8 @@ body {
 }
 
 ::selection {
-	background: #f0ede4;
-	color: #b90925;
+	background: #818c99;
+	color: white;
 }
 
 h1, h2 {
@@ -220,7 +220,7 @@ h4, h5 {
 }
 
 .fa-angle-up:hover {
-	color: #b90925;
+	color: #818c99;
 	background-color: #d2d0c8;
 	border: 1px solid #a29e98;
 }
@@ -233,19 +233,19 @@ h4, h5 {
 
 .form-control {
 	background-color: #343a40;
-	color: white;
+	color: #818c99;
 	border-radius: 0;
 }
 
 .form-control:focus {
-  color: white;
+  color: #818c99;
   background-color: #343a40;
   border-color: #343a40;
   box-shadow: none;
 }
 
 .form-control::placeholder {
-	color: white;
+	color: #818c99;
 }
 
 .jumbotron {
@@ -304,11 +304,11 @@ input::placeholder {
 }
 
 #siftNewer:hover, #siftOlder:hover {
-	color: #b90925;
+	color: #818c99;
 }
 
 .sub:hover {
-	color: #b90925;
+	color: #818c99;
 }
 
 .fa-search {
@@ -316,7 +316,7 @@ input::placeholder {
 }
 
 .fa-search:hover {
-	color: #b90925;
+	color: #818c99;
 }
 
 .fa-share-square-o {
@@ -325,16 +325,16 @@ input::placeholder {
 }
 
 .fa-share-square-o:hover {
-	color: #b90925
+	color: #818c99
 }
 
 a:hover {
 	text-decoration: none;
-	color: #b90925;
+	color: #818c99;
 }
 
 nav {
-	animation: slideMeRight .75s ease-in;
+	animation: slideMeRight 2s ease-out;
 }
 
 .navbar-toggler {
@@ -343,7 +343,7 @@ nav {
 }
 
 .search::placeholder {
-	color: white;
+	color: #818c99;
 }
 
 .social {
@@ -356,17 +356,46 @@ nav {
 	cursor: pointer;
 }
 
+.social.fa-twitter:hover {
+	color: #55aded;
+}
+
+.social.fa-facebook:hover {
+	color: #1877f2;
+}
+
+.social.fa-snapchat:hover {
+	color: #f7f400;
+}
+
+.social.fa-reddit:hover {
+	color: #ff4500;
+}
+
+.social.fa-tumblr:hover {
+	color: #2f4054;
+}
+
 .thedivider {
 	padding: 0;
 	margin-left: 2vw;
 	margin-right: 5vw;
 	border-bottom: 1px solid #a29e98;
-	animation: slideMeRight .75s ease;
+	animation: slideMeLeft 2s ease-out;
 }
 
 @keyframes slideMeRight{
 	0%{
-		transform: translateX(-500px);
+		transform: translateX(-1000px);
+		opacity: .25;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes slideMeLeft{
+	0%{
+		transform: translateX(1000px);
 		opacity: .25;
 	}
 	100%{
