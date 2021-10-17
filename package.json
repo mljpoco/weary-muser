@@ -11,6 +11,7 @@
   "author": "Mitchell Poco",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "lite-server": "^2.6.1"
   },
   "dependencies": {
@@ -18,7 +19,9 @@
     "babel-preset-react-app": "^3.1.2",
     "bootstrap": "^4.5.2",
     "font-awesome": "^4.7.0",
+    "install": "^0.13.0",
     "jquery": "^3.5.1",
+    "npm": "^7.24.2",
     "popper.js": "^1.16.1"
   },
   "repository": {
