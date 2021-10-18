@@ -1,0 +1,11 @@
+<h2>This is my personal blog.</h2><br>
+<h3>It is a simple, elegant, text-oriented project without many frills — but with plenty of character.</h3>
+<h3>Utiizing standard HTML5 along with bootstrap, Features include:</h3>
+<ul>
+  <li>Email Subscription List</li>
+  <li>Social Media Sharing</li>
+  <li>Comprehensive Chronological Archive of All Entries</li>
+  <li>Newer/Older Sifting Functionality</li>
+</ul>
+
+<h1>take a peek at www.wearymuser.com</h1>
