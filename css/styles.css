@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
-
 a {
 	color: #50525f;
 	text-decoration: none;
@@ -56,7 +52,7 @@ h1, h2 {
 	font-family: 'Cinzel Decorative', cursive;
 }
 
-h4, h5 {
+h5 {
 	font-family: 'Crimson Text', serif;
 }
 
@@ -187,8 +183,8 @@ h4, h5 {
 	}
 }
 
-.botnav {
-	font-family: 'Crimson Text', serif;
+.botnav, h4 {
+	font-family: 'Cinzel', serif;
 }
 
 .btn {
