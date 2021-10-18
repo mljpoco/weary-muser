@@ -62,10 +62,11 @@ function shareButtons() {
   });
   tumblr.addEventListener('click', () => {
     tumblr.target = '_blank';
-    tumblr.href = 'https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=' + 'window.location.href';
-  })
+    tumblr.href = 'https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=' + window.location.href;
+  });
   copyLink.addEventListener('click', () => {
     navigator.clipboard.writeText(window.location.href);
+    alert('Link copied to clipboard.');
   });
 }
 

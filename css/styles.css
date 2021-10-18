@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 
 a {
 	color: #50525f;
@@ -27,9 +27,15 @@ a {
 	font-family: 'Crimson Text', serif;
 }
 
+.article::first-letter {
+	font-size: 6rem;
+	padding: 0.1em;
+	float: left;
+	font-family: 'Cinzel', serif;
+}
+
 .article-title {
 	font-family: 'Cinzel Decorative', cursive;
-	
 	animation: fadeMeDown 2s ease-out;
 }
 
@@ -58,9 +64,6 @@ h4, h5 {
 	.article {
 		font-size: 5vw;
 		margin-left: 11vw;
-	}
-	.dropcap {
-		font-size: 6vw;
 	}
 	.wearymuser, .wearymuser-click {
 		font-size: 10vw;
@@ -99,9 +102,6 @@ h4, h5 {
 	.article {
 		font-size: 4vw;
 		margin-left: 10vw;
-	}
-	.dropcap {
-		font-size: 5vw;
 	}
 	.wearymuser, .wearymuser-click {
 		font-size: 8vw;
@@ -145,9 +145,6 @@ h4, h5 {
 		font-size: 3vw;
 		margin-left: 8vw;
 	}
-	.dropcap {
-		font-size: 4vw;
-	}
 	.wearymuser, .wearymuser-click {
 		font-size: 7vw;
 	}
@@ -166,9 +163,6 @@ h4, h5 {
 	.article {
 		font-size: 2vw;
 		margin-left: 7vw;
-	}
-	.dropcap {
-		font-size: 3vw;
 	}
 	.botnav {
 		font-size: 2vw;
@@ -223,12 +217,6 @@ h4, h5 {
 	color: #818c99;
 	background-color: #d2d0c8;
 	border: 1px solid #a29e98;
-}
-
-.dropcap {
-	float: left;
-	font-size: 3vw;
-	font-family: 'Playfair Display SC', serif;
 }
 
 .form-control {
