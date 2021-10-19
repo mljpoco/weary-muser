@@ -73,7 +73,7 @@ function shareButtons() {
 }
 
 function scrollToTop() {
-  document.documentElement.scrollTo({
+  window.scrollTo({
     top: 0,
     behavior: 'smooth'
   });
