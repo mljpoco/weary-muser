@@ -7,6 +7,7 @@ let url = 'http://localhost:3000/';
 function renderArticle() {
   const title = document.getElementById('titleWrapper');
   const body = document.getElementById('bodyWrapper');
+  const scrollBtn = document.getElementById('scrollTop');
   if (window.location.href === 'http://localhost:3000/index.html' || window.location.href === url) {
     title.innerHTML = articles[0].title;
     body.innerHTML = articles[0].body;
@@ -16,9 +17,10 @@ function renderArticle() {
     body.innerHTML = articles.find(
     article => url+article.href === window.location.href).body;
   }
-  loadTitleAndUrlForShare(title);
   siftSearch(title);
+  loadTitleAndUrlForShare(title);
   shareButtons();
+  scrollBtn.addEventListener('click', scrollToTop);
 }
 
 function siftSearch(title) {
@@ -39,7 +41,7 @@ function loadTitleAndUrlForShare(title) {
   document.getElementById('ogUrl').setAttribute('content', window.location.href);
 }
 
-// Most social media sharing is as simple as adding your link to the end of
+// Most social media sharing is as simple as adding your url to the end of
 // their sharing path. Snapchat requires you to use their SDK.
 function shareButtons() {
   const twitter = document.getElementById('twitter');
@@ -66,7 +68,14 @@ function shareButtons() {
   });
   copyLink.addEventListener('click', () => {
     navigator.clipboard.writeText(window.location.href);
-    alert('Link copied to clipboard.');
+    alert('This entry\'s link has been copied to your clipboard.');
+  });
+}
+
+function scrollToTop() {
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: 'smooth'
   });
 }
 

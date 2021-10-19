@@ -1,5 +1,5 @@
 a {
-	color: #50525f;
+	color: #010941;
 	text-decoration: none;
 }
 
@@ -10,7 +10,7 @@ a {
 }
 
 .article {
-	color: #4e4c50;
+	color: #010941;
 	position: relative;
 	display: inline-block;
 	margin-right: 4vw;
@@ -20,7 +20,7 @@ a {
 	padding-top: 7vh;
 	padding-left: 3vw;
 	border-left: 1px solid #a29e98;
-	font-family: 'Crimson Text', serif;
+	font-family: 'Cormorant Garamond', serif;
 }
 
 .article::first-letter {
@@ -38,7 +38,7 @@ a {
 body {
 	overflow-x: hidden;
 	background-color: #d2d0c8;
-	color: #50525f;
+	color: #010941;
 }
 
 ::selection {
@@ -53,7 +53,7 @@ h1, h2 {
 }
 
 h5 {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Cormorant Garamond', serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -184,7 +184,7 @@ h5 {
 }
 
 .botnav, h4 {
-	font-family: 'Cinzel', serif;
+	font-family: 'Crimson Text', serif;
 }
 
 .btn {
@@ -203,10 +203,10 @@ h5 {
 }
 
 .fa-angle-up {
-	color: #50525f;
+	color: #010941;
+	margin-top: 2vh;
 	background-color: #d2d0c8;
 	border: 1px solid #d2d0c8;
-	margin-top: 2vh;
 }
 
 .fa-angle-up:hover {
@@ -254,15 +254,15 @@ ul {
 	width: 100%;
 	pointer-events: auto;
 	background-color: #d2d0c8;
-	color: #50525f;
+	color: #010941;
 	background-clip: padding-box;
 	box-shadow: 18px 14px 7px rgba(0, 0, 0, 0.2);
 	outline: 0;
-	font-family: 'Crimson Text', serif;
+	font-family: 'Cormorant Garamond', serif;
 }
 
 input::placeholder {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Cormorant Garamond', serif;
 }
 
 .modal-header {
@@ -281,9 +281,9 @@ input::placeholder {
 #siftNewer, #siftOlder {
 	position: relative;
 	z-index: 1;
-	margin: 1vh 3vw;
+	margin: 2vh 3vw;
 	font-family: 'Cinzel Decorative', cursive;
-	color: #50525f;
+	color: #010941;
 	user-select: none;
 }
 
@@ -296,7 +296,7 @@ input::placeholder {
 }
 
 .fa-search {
-	color: #50525f;
+	color: #010941;
 }
 
 .fa-search:hover {
