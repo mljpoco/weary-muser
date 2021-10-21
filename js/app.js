@@ -22,7 +22,6 @@ function renderArticle() {
   shareButtons();
   scrollBtn.addEventListener('click', scrollToTop);
 }
-
 function siftSearch(title) {
   const newer = document.getElementById('siftNewer');
   const older = document.getElementById('siftOlder');
@@ -34,11 +33,24 @@ function siftSearch(title) {
   (currentPos < articles.length - 1) ?
   older.href = articles[currentPos + 1].href :
   older.removeAttribute('href');
+  (!newer.href) ?
+  newer.classList.add('newest') :
+  newer.classList.remove('newest');
+  (!older.href) ?
+  older.classList.add('oldest') :
+  older.classList.remove('oldest');
 }
 
 function loadTitleAndUrlForShare(title) {
+  const wearymuser = document.getElementById('wearymuser');
   document.getElementById('ogTitle').setAttribute('content', title.innerHTML);
   document.getElementById('ogUrl').setAttribute('content', window.location.href);
+  if (title.innerHTML === articles[0].title) {
+    wearymuser.firstElementChild.removeAttribute('href');
+  } else {
+    wearymuser.firstElementChild.href = 'index.html';
+    wearymuser.classList.add('wearymuser-click');
+  }
 }
 
 // Most social media sharing is as simple as adding your url to the end of
