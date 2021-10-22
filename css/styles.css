@@ -210,6 +210,7 @@ h5, h3 {
 .fa-angle-up {
 	color: #010941;
 	margin-top: 2vh;
+	margin-bottom: 0.5vh;
 	background-color: #d2d0c8;
 	border: 1px solid #d2d0c8;
 }
