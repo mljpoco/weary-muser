@@ -20,9 +20,10 @@ a:hover {
 	display: inline-block;
 	margin-right: 4vw;
 	margin-left: 7vw;
+	margin-top: -1vh;
 	text-align: left;
 	word-break: break-word;
-	padding-top: 7vh;
+	padding-top: 8vh;
 	padding-left: 3vw;
 	border-left: 1px solid #a29e98;
 	font-family: 'Cormorant Garamond', serif;
