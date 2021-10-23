@@ -8,4 +8,4 @@
   <li>Newer/Older Sifting Functionality</li>
 </ul>
 
-<h1>take a peek at www.wearymuser.com</h1>
+<h1>take a peek at <a href="www.wearymuser.com" target="_blank">www.wearymuser.com</a></h1>
