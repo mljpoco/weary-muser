@@ -2,13 +2,13 @@
 
 import { articles } from './articles.js';
 
-let url = 'http://localhost:3000/';
+let url = 'https://www.wearymuser.com';
 
 function renderArticle() {
   const title = document.getElementById('titleWrapper');
   const body = document.getElementById('bodyWrapper');
   const scrollBtn = document.getElementById('scrollTop');
-  if (window.location.href === 'http://localhost:3000/index.html' || window.location.href === url) {
+  if (window.location.href === url || window.location.href === 'http://www.wearymuser.com/index.html') {
     title.innerHTML = articles[0].title;
     body.innerHTML = articles[0].body;
   } else {
