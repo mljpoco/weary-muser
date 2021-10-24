@@ -6,6 +6,7 @@
   <li>Social Media Sharing</li>
   <li>Comprehensive Chronological Archive of All Entries</li>
   <li>Newer/Older Sifting Functionality</li>
+  <li>Mobile Responsive Styling</li>
 </ul>
 
 <h1>take a peek at <a href="https://www.wearymuser.com" target="_blank">www.wearymuser.com</a></h1>
