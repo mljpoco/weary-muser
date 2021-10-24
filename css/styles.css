@@ -14,13 +14,18 @@ a:hover {
 	z-index: 2;
 }
 
+.archivelink:hover {
+	color: black;
+	cursor: pointer;
+}
+
 .article {
 	color: #010941;
 	position: relative;
 	display: inline-block;
 	margin-right: 4vw;
 	margin-left: 7vw;
-	margin-top: -1vh;
+	margin-top: -2vh;
 	text-align: left;
 	word-break: break-word;
 	padding-top: 8vh;
@@ -251,6 +256,11 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+.latest:hover {
+	color: black;
+	cursor: pointer;
 }
 
 .modal-content {

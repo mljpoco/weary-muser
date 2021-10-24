@@ -2,36 +2,37 @@
 
 import { articles } from './articles.js';
 
-let url = 'https://www.wearymuser.com';
+let url = 'http://localhost:3000/index.html';
 
 function renderArticle() {
   const title = document.getElementById('titleWrapper');
   const body = document.getElementById('bodyWrapper');
   const scrollBtn = document.getElementById('scrollTop');
-  if (window.location.href === url || window.location.href === 'http://www.wearymuser.com/index.html') {
+  if (url === window.location.href) {
     title.innerHTML = articles[0].title;
     body.innerHTML = articles[0].body;
   } else {
     title.innerHTML = articles.find(
-    article => url+article.href === window.location.href).title;
+    article => url+article.queryStr === window.location.href).title;
     body.innerHTML = articles.find(
-    article => url+article.href === window.location.href).body;
+    article => url+article.queryStr === window.location.href).body;
   }
   siftSearch(title);
   loadTitleAndUrlForShare(title);
   shareButtons();
   scrollBtn.addEventListener('click', scrollToTop);
 }
+
 function siftSearch(title) {
   const newer = document.getElementById('siftNewer');
   const older = document.getElementById('siftOlder');
   let currentPos = articles.findIndex(article => article.title === title.innerHTML);
   console.log('entry number '+articles[currentPos].id);
   (currentPos > 0) ?
-  newer.href = articles[currentPos - 1].href :
+  newer.href = articles[currentPos - 1].queryStr :
   newer.removeAttribute('href');
   (currentPos < articles.length - 1) ?
-  older.href = articles[currentPos + 1].href :
+  older.href = articles[currentPos + 1].queryStr :
   older.removeAttribute('href');
   (!newer.href) ?
   newer.classList.add('newest') :

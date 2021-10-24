@@ -1,36 +1,36 @@
 'use strict';
 export const articles = [
   {
-    id: 4,
+    id: 3,
     title: 'The Why Phase',
-    href: 'TheWhyPhase',
+    queryStr: '?theWhyPhase',
     month: 'October',
     year: '2021',
     body: 
     'Being satisfied with an answer has little to do with having arrived at a logically acceptable conclusion — and more to do with the merciful cessation of an intellectual dissection whose inertia would otherwise carry it out indefinitely. Parents (re-) learn this when their children come to be about four years old, and enter the proverbial <em>Why Phase</em>. The Why Phase is regarded as everything from cute, to remarkable, to mind-numbingly frustrating — but always as something out of which every functional person is expected to grow.<br><br>The completely natural phenomenon of the Why Phase never actually leaves the brain, however. A quick test will reveal it’s simply tucked under the surface, just beneath the veil of personality. You start with any explanation, and find that without much struggle — the question, “why?”, can be asked in perfectly good faith until you run out of language. It’s interesting that we acknowledge this natural inquisitive capacity to be so unwieldy that it’s of imperative social necessity to relegate its verbal manifestation to little more than youth and/or isolation — but at the same time we demand its exercise whenever anything of importance is being discussed.<br><br>At the very best this is a hilarious contradiction to watch unfold if you’re bearing witness to an argument between two people who’ve forgotten there are no coordinates to the bottom of the rabbit hole, and at the worst — it gets people ostracized, persecuted, and killed. When we treat logical analysis as an end in itself in the theatre of decision-making as it pertains to large groups especially, one half of what makes us fundamentally human is swept under the rug and stamped out. The terms to describe that half usually take on names like intuition, common sense, social-graces, etc. All the things of importance when the glue that holds people together is what’s at stake.<br><br>I love a clean, logical process of thinking and explaining phenomena just as much as the next person, but trying to make it the holy grail to which all should aspire on every front is suggesting that the tail should wag the dog. A car\'s engine does not exist for its own sake save for in special environments dedicated to its bleeding edge expression. Similarly, intellectual prowess has its domain, and it’s imperative that the Why Phase <em>continue</em> to be siphoned accordingly — just as much because of what deleterious potential it can possess, as because the promise it holds is too valuable to be squandered in settings where it isn’t welcome.<br><br> When the world’s thinkers have no direction — they mold and carve their surroundings to taste. The intellect is too corrosive for this to happen uncoordinated for any length of time with the expectation that the integral structures of the society hosting it might remain uninjured. We must allow and encourage our thinkers to have their spaces, or be ready to continue riding waves of cultural upheaval as they arrive.'
   },
   {
-    id: 3,
+    id: 2,
     title: 'For Its Own Sake',
-    href: 'ForItsOwnSake',
+    queryStr: '?forItsOwnSake',
     month: 'October',
     year: '2021',
     body:
     'Every day a challenge. You wake up and fight the sleep out of your eyes, meander into the kitchen, and concoct a potent brown elixir to force your brain into a state of alertness against its will. Drape clothes over your limbs despite the protest of your stiff muscles, and breathe heavily through the entire process — straining to focus on the various tasks at hand instead of the discomfort they bring you. Once you’re ready, you head out the door into a world which reveals itself day after day to be the essence of what your arduous mornings are a microcosm of.<br><br>You might feel embarrassed in the presence of any of your distant ancestors, with all your creature comforts and technology — but the truth is that they would laugh at your anxiety if they’d the means to know you. If their shoes were yours, they’d be doing the same dance. So why all the strife? What have you to prove? For nothing more than to avoid the discontentment of your peers you bleed and scrape and weep for a future whose inhabitants will look back on you with the same embarrassment — which you’d of course regard with the humorous reassurance of your own predecessors, for if their shoes were yours, <em>you’d</em> be doing the same dance. And so the dance goes on and on.<br><br>But humans solve problems. It’s what we do — it’s been too long since the days of hunting, rest, and survival, for us to understand how to do anything else, and we’d been coasting under the momentum of our initial civilizing leaps for too long before we had the wherewithal to see them as just exactly what we’d been doing prior — only in a different flavor. We are the most recent generation of a virus that complexifies things for its own sake. Ever-defining new problems by way of cutting up what we know and categorizing it so we can be dissatisfied with what we’ve decided it represents — and then dissecting the lot again and reorganizing it till it’s deemed sorted. (For the time being.) We know every “solution” we implement is provisional, and yet we go on like mad with the things until we perish, praying that our children take up whichever arbitrary torch — or a variation of it, that we chose to carry through life.<br><br>Any length of analysis will reveal that as a species we are essentially like an eight billion person sized toddler, playing with its hands — each of which possesses a sock with a face drawn on, and myriad intentions. There can never be a winner — just more or different rules. What to do, what to do? Well, I write this blog. And I do a little dance every once in a while — study for a significant chunk of time, and eat a sandwich in the middle of the day. There is no mystery unless you create one — and if you don’t like mysteries, there’s a trillion other means of exercising your complexifying nature that might suit you better. At the very least, maybe try to have a pleasant time doing it. I know I do.'
   },
   {
-    id: 2,
+    id: 1,
     title: 'The Ideal Man',
-    href: 'TheIdealMan',
+    queryStr: '?theIdealMan',
     month: 'October',
     year: '2021',
     body:
     'His every act is in perfect accordance with his conscious will. He is never rushed, but also never quite idle. There is a transcendent calmness about him which comforts and reassures every being he comes into contact with. His patience is impenetrable, and his discipline as consistent and unwavering as the cycles of the universe. He is measured, but not anxious — supremely peaceful, but never lazy. When he makes a mistake, he corrects himself swiftly and gently, taking care to sow no further discord in his environment or in himself. It\'s as though he experiences his entire life as a lucid dream — infinitely aware, so that the only tension which ever beseiges him is that which he is keen to invite upon himself.'
   },
   {
-    id: 1,
+    id: 0,
     title: 'Decisions, Decisions',
-    href: 'Decisions,Decisions',
+    queryStr: '?decisionsDecisions',
     month: 'October',
     year: '2021',
     body:
