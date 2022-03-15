@@ -25,13 +25,14 @@ a:hover {
 	display: inline-block;
 	margin-right: 4vw;
 	margin-left: 7vw;
-	margin-top: -2vh;
+	margin-top: 2vh;
 	text-align: left;
 	word-break: break-word;
 	padding-top: 8vh;
 	padding-left: 3vw;
 	border-left: 1px solid #a29e98;
 	font-family: 'Cormorant Garamond', serif;
+	z-index: 1;
 }
 
 .article::first-letter {
@@ -330,6 +331,7 @@ ul {
 
 nav {
 	animation: slideMeRight 2s ease-out;
+	z-index: 500;
 }
 
 .navbar-toggler {
