@@ -36,7 +36,7 @@ a:hover {
 }
 
 .article::first-letter {
-	font-size: 6rem;
+	font-size: 4em;
 	padding: 0.1em;
 	float: left;
 	font-family: 'Cinzel', serif;

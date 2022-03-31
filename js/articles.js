@@ -1,6 +1,15 @@
 'use strict';
 export const articles = [
   {
+    id: 9,
+    title: 'I Think I Think I Left The Stove On',
+    queryStr: '?iThinkIThinkILeftTheStoveOn',
+    month: 'March',
+    year: '2022',
+    body:
+      'You know what to do the same way a waterfall knows to descend off its precipice, and how a spider knows to spin its web. All your striving and all your doubt - the combined work of an incalculable number of separate moments each with their own isolated context and purpose, are not in their totality obligated to explain themselves, and as such they never do; but they are as dignified in their being as the Swiss Alps are in theirs, and as reliable in what progress they attain to as fingernails left unclipped.<br /><br />To see that fundamental guiding wisdom which crafts the scientifically inexplicable aerodynamics of avian wings, and what makes the sands the perfect surface whereupon the sea may kiss the land and harbor the vast plethora of intertidal creatures, then shy away from the implication that that force could not but reside inside your own self - is to blush and run from the one you love for fear of hoping what you wish may very actually be. Is it not evidence enough that a stone <em>is</em>, the same way you <em>are</em>? Nothing could be simpler, but we play the playwrights in this existential drama so well, that, illusorily pedestalizing ourselves to assume the burden of the entire orchestration, we fancy we are smote beyond recovery from shouldering some such weight - even just lounging in a chair.<br /><br />So we tense up and fret and shake our fists at the mad synechdoche we are, (for the whole of being is manifest anywhere you care to look, including within.) ignoring, perhaps for the sake of effect, that to deliberate over the necessity of our deliberations - is for a bird to chirp in panic over the structural integrity of the sky, <em>while soaring through it</em>.<br /><br />The sky is gifted to the birds with no expectation of recompense, as a birthright. The higher order processes of human beings is a gift of the same nature. It is passable for a fledgling to fear what lay beyond the nest, but you ask after the price tag in the face of your ineffable benefactor when you refuse to exercise your birthright with conviction once the recalcitrant, cyclical bedrock of existential inquiry has been gracelessly struck by your fearful pickaxe for the eleven hundredth time.<br /><br />The responsibility of an ant to its hill is no small thing.'
+  },
+  {
     id: 8,
     title: 'Something About Sandcastles',
     queryStr: '?somethingAboutSandcastles',
