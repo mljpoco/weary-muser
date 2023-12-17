@@ -1,5 +1,5 @@
 <h2>Weary Muser</h2><br>
-<h3>Simple, elegant, plaintext-intensive</h3>
+<h3>Simple, elegant, text-centric blog</h3>
 <h3>Utilizing standard HTML5 along with bootstrap, features include:</h3>
 <ul>
   <li>Email Subscription List/Contact Form</li>
