@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Cormorant Garammond';
+  src: local('Cormorant Garamond'), url(/fonts/CormorantGaramond-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: local('Cinzel'), url(/fonts/Cinzel-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Cinzel Decorative';
+  src: local('Cinzel Decorative'), url(/fonts/CinzelDecorative-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: local('Crimson Text'), url(/fonts/CrimsonText-Regular.ttf) format('truetype');
+}
+
 a {
 	color: #010941;
 	text-decoration: none;

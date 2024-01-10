@@ -2,95 +2,86 @@
 <html lang="en">
 
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Crimson+Text&family=Cormorant+Garamond&display=swap"
-		rel="stylesheet">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:site_name" content="Weary Muser" />
-	<meta property="og:title" id="ogTitle" />
-	<meta property="og:url" id="ogUrl" />
-	<meta property="og:type" content="article" />
-	<meta property="snap:sticker" content="./images/favicon/snap-sticker-400x400.png" />
-	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-	<link rel="manifest" href="./images/favicon/site.webmanifest">
-	<!-- build:css css/main.css -->
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<!-- endbuild -->
-	<title>Weary Muser</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:site_name" content="Weary Muser" />
+  <meta property="og:title" id="ogTitle" />
+  <meta property="og:url" id="ogUrl" />
+  <meta property="og:type" content="article" />
+  <meta property="snap:sticker" content="./images/favicon/snap-sticker-400x400.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <!-- build:css css/main.css -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- endbuild -->
+  <title>Weary Muser</title>
 </head>
 
 <body>
-	<header class="jumbotron jumbotron-fluid">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col">
-					<h4 id="topnav" class="topnav"><a role="button" data-toggle="modal" data-target="#subscribeModal">
-							<span class="sub">Subscribe</span>
-						</a></h4>
-				</div>
-				<div id="subscribeModal" class="modal fade" role="dialog">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header bg-dark text-white">
-								<h2 class="modal-title text-center">Subscribe</h2>
-								<button type="button" class="close bg-light" data-dismiss="modal">&times;</button>
-							</div>
-							<div class="modal-body">
-								<!-- Begin Mailchimp Signup Form -->
-								<div class="container-fluid" id="mc_embed_signup">
-									<form
-										action="https://wearymuser.us5.list-manage.com/subscribe/post?u=f710ba48f3986bfc276fc7d6a&amp;id=c08b0d8168"
-										method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-										class="validate" target="_blank" novalidate>
-										<div class="form-row" id="mc_embed_signup_scroll">
-											<div class="form-group col-12">
-												<h5 class="form-text text-center"><em>Enter your Email to receive
-														an update whenever there's a new post!</em></h5>
-											</div>
-										</div>
-										<div class="form-row mc-field-group">
-											<div class="form-group col-12">
-												<label class="sr-only" for="mce-EMAIL">Email Address </label>
-												<input type="email" name="EMAIL"
-													class="form-control bg-dark text-white required email"
-													id="mce-EMAIL" placeholder="Enter email">
-											</div>
-										</div>
-										<div id="mce-responses" class="clear">
-											<div class="response" id="mce-error-response" style="display:none"></div>
-											<div class="response" id="mce-success-response" style="display:none"></div>
-										</div>
-										<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-										<div style="position: absolute; left: -5000px;" aria-hidden="true"><input
-												type="text" name="b_f710ba48f3986bfc276fc7d6a_c08b0d8168" tabindex="-1"
-												value="">
-										</div>
-										<div class="form-row clear">
-											<div class="col text-right">
-												<button type="submit" value="Subscribe" name="subscribe"
-													id="mc-embedded-subscribe"
-													class="button btn btn-dark">Confirm</button>
-											</div>
-											<div class="col">
-												<button type="button" class="btn btn-secondary"
-													data-dismiss="modal">Cancel</button>
-											</div>
-										</div>
-									</form>
-								</div>
-								<!--End mc_embed_signup-->
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- <h4 class="topnav">
+  <header class="jumbotron jumbotron-fluid">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h4 id="topnav" class="topnav"><a role="button" data-toggle="modal" data-target="#subscribeModal">
+              <span class="sub">Subscribe</span>
+            </a></h4>
+        </div>
+        <div id="subscribeModal" class="modal fade" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark text-white">
+                <h2 class="modal-title text-center">Subscribe</h2>
+                <button type="button" class="close bg-light" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <!-- Begin Mailchimp Signup Form -->
+                <div class="container-fluid" id="mc_embed_signup">
+                  <form
+                    action="https://wearymuser.us5.list-manage.com/subscribe/post?u=f710ba48f3986bfc276fc7d6a&amp;id=c08b0d8168"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+                    <div class="form-row" id="mc_embed_signup_scroll">
+                      <div class="form-group col-12">
+                        <h5 class="form-text text-center"><em>Enter your Email to receive
+                            an update whenever there's a new post!</em></h5>
+                      </div>
+                    </div>
+                    <div class="form-row mc-field-group">
+                      <div class="form-group col-12">
+                        <label class="sr-only" for="mce-EMAIL">Email Address </label>
+                        <input type="email" name="EMAIL" class="form-control bg-dark text-white required email"
+                          id="mce-EMAIL" placeholder="Enter email">
+                      </div>
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_f710ba48f3986bfc276fc7d6a_c08b0d8168" tabindex="-1" value="">
+                    </div>
+                    <div class="form-row clear">
+                      <div class="col text-right">
+                        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                          class="button btn btn-dark">Confirm</button>
+                      </div>
+                      <div class="col">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!--End mc_embed_signup-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <h4 class="topnav">
 					<div class="col">
 						<div class="input-group">
 							<label class="form-label" for="search"></label>
@@ -101,130 +92,139 @@
 						</div>
 					</div>
 				</h4> -->
-			</div>
-			<div class="col">
-				<h1 class="wearymuser" id="wearymuser"><a href="index.html" draggable="false"><strong><em>Weary
-								Muser</em></strong></a></h1>
-			</div>
-		</div>
-	</header>
-	<div class="container-fluid">
-		<nav class="navbar navbar-expand-sm navbar-light">
-			<button type="button" role="button" class="navbar-toggler" data-toggle="collapse" data-target="#wearyNavbar"
-				aria-controls="#wearyNavbar" aria-expanded="false">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="wearyNavbar">
-				<ul class="navbar-nav navbar-expand-sm">
-					<li>
-						<h5 class="botnav nav-item col"><a href="index.html" draggable="false">Latest</a></h5>
-					</li>
-					<li>
-						<h5 class="botnav nav-item col"><a href="about.html" draggable="false">About</a></h5>
-					</li>
-					<li>
-						<h5 class="botnav nav-item col"><a href="contact.html" draggable="false">Contact</a></h5>
-					</li>
-					<li>
-						<h5 class="botnav nav-item col text-nowrap"><a href="support.html" draggable="false">Support the
-								Muser</a></h5>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<div class="container-fluid">
-		<div class="row archive-greater">
-			<div class="botnav col text-right order-last thedivider">
-				<a data-toggle="collapse" href=".arch-collapse" role="button" aria-expanded="false"
-					aria-controls="arch-collapse" draggable="false">
-					Archive
-				</a>
-				<div class="collapse arch-collapse">
-					<a data-toggle="collapse" href=".tt-two-collapse" role="button" aria-expanded="false"
-						aria-controls="tt-two-collapse" draggable="false">
-						2022
-					</a>
-					<div class="collapse tt-two-collapse">
-						<ul>
-							<li><a href="?aReflectionOnAnxiety" draggable="false">A Reflection on Anxiety</a></li>
-							<li><a href="?somethingAboutSandcastles" draggable="false">Something About Sandcastles</a>
-							</li>
-							<li><a href="?iThinkIThinkILeftTheStoveOn" draggable="false">I Think I Think I Left The
-									Stove On</a></li>
-							<li><a href="?adversity" draggable="false">Adversity</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 text-center article-title">
-				<span id="titleWrapper">
-					<!-- title below -->
+      </div>
+      <div class="col">
+        <h1 class="wearymuser" id="wearymuser"><a href="index.html" draggable="false"><strong><em>Weary
+                Muser</em></strong></a></h1>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <button type="button" role="button" class="navbar-toggler" data-toggle="collapse" data-target="#wearyNavbar"
+        aria-controls="#wearyNavbar" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="wearyNavbar">
+        <ul class="navbar-nav navbar-expand-sm">
+          <li>
+            <h5 class="botnav nav-item col"><a href="index.html" draggable="false">Latest</a></h5>
+          </li>
+          <li>
+            <h5 class="botnav nav-item col"><a href="about.html" draggable="false">About</a></h5>
+          </li>
+          <li>
+            <h5 class="botnav nav-item col"><a href="contact.html" draggable="false">Contact</a></h5>
+          </li>
+          <li>
+            <h5 class="botnav nav-item col text-nowrap"><a href="support.html" draggable="false">Support the
+                Muser</a></h5>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container-fluid">
+    <div class="row archive-greater">
+      <div class="botnav col text-right order-last thedivider">
+        <a data-toggle="collapse" href=".arch-collapse" role="button" aria-expanded="false"
+          aria-controls="arch-collapse" draggable="false">
+          Archive
+        </a>
+        <div class="collapse arch-collapse">
+          <a data-toggle="collapse" href=".tt-one-collapse" role="button" aria-expanded="false"
+            aria-controls="tt-one-collapse" draggable="false">
+            2021
+          </a>
+          <div class="collapse tt-one-collapse">
+            <ul>
+              <li><a href="?theIdealMan" draggable="false">The Ideal Man</a></li>
+              <li><a href="?theWhyPhase" draggable="false">The Why Phase</a>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse arch-collapse">
+          <a data-toggle="collapse" href=".tt-three-collapse" role="button" aria-expanded="false"
+            aria-controls="tt-three-collapse" draggable="false">
+            2023
+          </a>
+          <div class="collapse tt-three-collapse">
+            <ul>
+              <li><a href="?loremIpsum" draggable="false">Lorem Ipsum</a></li>
+              <li><a href="?moreLorem" draggable="false">More Lorem</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 text-center article-title">
+      <span id="titleWrapper">
+        <!-- title below -->
 
-					<!-- title above -->
-				</span>
-			</div>
-		</div>
-	</div>
-	<div class="share">
-		<a role="button" data-toggle="modal" data-target="#socialModal"><i class="fa fa-share-square-o fa-2x"></i></a>
-	</div>
-	<div id="socialModal" class="modal fade" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header bg-dark text-white">
-					<h2 class="modal-title text-center">Share This Entry</h2>
-					<button type="button" class="close bg-light" data-dismiss="modal">&times;</button>
-				</div>
-				<div class="modal-body text-center">
-					<div class="container-fluid">
-						<a class="social fa fa-twitter" id="twitter"></a>
-						<a class="social fa fa-facebook" id="facebook"></a>
-						<a class="snapchat-share-button social fa fa-snapchat" data-share-url="."></a>
-						<a class="social fa fa-reddit" id="reddit"></a>
-						<a class="social fa fa-tumblr" id="tumblr"></a>
-						<a class="social fa fa-copy" id="copyLink"></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="article">
-		<span id="bodyWrapper">
-			<!-- body below -->
+        <!-- title above -->
+      </span>
+    </div>
+  </div>
+  </div>
+  <div class="share">
+    <a role="button" data-toggle="modal" data-target="#socialModal"><i class="fa fa-share-square-o fa-2x"></i></a>
+  </div>
+  <div id="socialModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h2 class="modal-title text-center">Share This Entry</h2>
+          <button type="button" class="close bg-light" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="container-fluid">
+            <a class="social fa fa-twitter" id="twitter"></a>
+            <a class="social fa fa-facebook" id="facebook"></a>
+            <a class="snapchat-share-button social fa fa-snapchat" data-share-url="."></a>
+            <a class="social fa fa-reddit" id="reddit"></a>
+            <a class="social fa fa-tumblr" id="tumblr"></a>
+            <a class="social fa fa-copy" id="copyLink"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="article">
+    <span id="bodyWrapper">
+      <!-- body below -->
 
-			<!-- body above -->
-		</span>
-	</div>
-	<div class="container-fluid">
-		<div class="text-center">
-			<i class="btn fa fa-angle-up" id="scrollTop"></i>
-		</div>
-		<div class="row">
-			<div class="col text-left">
-				<a id="siftNewer">Newer</a>
-			</div>
-			<div class="col text-right">
-				<a id="siftOlder">Older</a>
-			</div>
-		</div>
-	</div>
-	<footer class="text-center">
-		<small>&copy; Copyright 2021, WearyMuser. All Rights Reserved</small>
-	</footer>
-	<!-- build:js js/main.js -->
-	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script async src="js/snap.js"></script>
-	<script type="module" src="js/app.js"></script>
-	<script>
-		document.getElementById('mc-embedded-subscribe').addEventListener('click', () => {
-			location.reload();
-			return false;
-		});
-	</script>
-	<!-- endbuild -->
+      <!-- body above -->
+    </span>
+  </div>
+  <div class="container-fluid">
+    <div class="text-center">
+      <i class="btn fa fa-angle-up" id="scrollTop"></i>
+    </div>
+    <div class="row">
+      <div class="col text-left">
+        <a id="siftNewer">Newer</a>
+      </div>
+      <div class="col text-right">
+        <a id="siftOlder">Older</a>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center">
+    <small>&copy; Copyright 2024, WearyMuser. All Rights Reserved</small>
+  </footer>
+  <!-- build:js js/main.js -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script async src="js/snap.js"></script>
+  <script type="module" src="js/app.js"></script>
+  <script>
+    document.getElementById('mc-embedded-subscribe').addEventListener('click', () => {
+      location.reload();
+      return false;
+    });
+  </script>
+  <!-- endbuild -->
 </body>
 
 </html>
