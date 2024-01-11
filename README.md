@@ -9,4 +9,8 @@
   <li>Mobile Responsivity</li>
 </ul>
 
+<<<<<<< HEAD
 <h1>take a peek at <a href="https://www.wearymuser.xyz" target="_blank">wearymuser.xyz</a></h1>
+=======
+<h1>take a peek at <a href="https://www.wearymuser.xyz/index.html" target="_blank">www.wearymuser.xyz</a></h1>
+>>>>>>> d0b86895181911fb19374e16363bb2acfb429526
