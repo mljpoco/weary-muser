@@ -9,4 +9,4 @@
   <li>Mobile Responsivity</li>
 </ul>
 
-<h1>take a peek at <a href="https://www.wearymuser.com" target="_blank">www.wearymuser.com</a></h1>
+<h1>take a peek at <a href="https://www.wearymuser.xyz" target="_blank">wearymuser.xyz</a></h1>
